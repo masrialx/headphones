@@ -5,6 +5,7 @@
 :root{
     --fcolor:#FFFFFF;
     --btn:#FF6565;
+    --black:#071629;
 }
 body{
     font-family: "Source Sans Pro", sans-serif;
@@ -125,6 +126,98 @@ body{
     margin-top: 40px;
 }
 
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.what{
+    width: 80%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+.what .top{
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.what .top h1{
+    padding-top: 20px;
+    text-align: center;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--black);
+}
+.what .top p{
+    padding-top: 20px;
+    width: 637px;
+    color: var(--black);
+    text-align: center;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.what .bot{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.what .bots{
+    width: 80%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+.what .bots div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    width: 207px;
+}
+.what .bots h3{
+    text-align: center;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    color: var(--black);
+}
+.what .bots span{
+    text-align: center;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--black);
+}
+.what .bots img{
+    color: var(--btn);
+}
+
+    /*////////////////// media screen for header/////////////// */
+
 @media (max-width: 1000px){
     .box .boxs{
         width: 100%;
@@ -194,3 +287,54 @@ body{
    
    
 }
+
+    /*////////////////// media screen for menu what/////////////// */
+
+    @media (max-width: 1000px){
+         .what .bots{
+            width: 90%;
+            flex-wrap: nowrap;
+            
+        }
+    }
+    @media (max-width: 800px){
+        .what .bots{
+           width: 97%;
+           flex-wrap: nowrap;
+           
+       }
+   }
+   @media (max-width: 700px){
+    .what .bots{
+       width: 80%;
+       flex-wrap: wrap;
+       
+   }
+   .what .top p{
+    width: 100%;
+
+}
+}
+@media (max-width: 650px){
+    .what .bots{
+       width: 90%;
+       flex-wrap: wrap;
+       align-items: center;
+       
+   }
+}
+@media (max-width: 600px){
+    .what .bots{
+       width: 97%;
+       flex-wrap: wrap;
+       
+   }
+}
+@media (max-width: 550px){
+    .what .bots{
+       width: 60%;
+       flex-wrap: wrap;
+       
+   }
+}
+    
