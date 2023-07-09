@@ -185,17 +185,18 @@ body{
 }
 .what .bot{
     width: 100%;
-    height: 300px;
+    height: auto;
     display: flex;
     justify-content: center;
 }
 .what .bots{
     width: 80%;
-    height: 300px;
+    height: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+  
     
 }
 .what .bots div{
@@ -546,8 +547,11 @@ body{
        }
    }
    @media (max-width: 700px){
+    .what .whats{
+        min-height: 60vh;
+    }
     .what .bots{
-       width: 80%;
+       width: 90%;
        flex-wrap: wrap;
        
    }
@@ -695,6 +699,9 @@ body{
     .footer img{
         height: 30px;
     }
+    .footer span{
+        width: 200px;
+    }
 }
 @media (max-width: 450px){
     .footers{
@@ -704,5 +711,8 @@ body{
     }
     .footer img{
         height: 20px;
+    }
+    .footer span{
+        width: 200px;
     }
 }
