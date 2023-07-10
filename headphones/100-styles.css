@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fcolor:#FFFFFF;
+    --btn:#FF6565;
+    --black:#071629;
+    --back:#071629;
+}
+
+.pentagon-container {
+    width: 180px;
+    height: 180px;
+    position: relative;
+}
+
+.pentagon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    background-color: var(--btn);
+}
+.bot{
+    margin-top: 100px;
+}
+
+.bit{
+  margin: 10px;
+}
+
+
+
+
+
+
+
+body{
+    font-family: "Source Sans Pro", sans-serif;
+}
+.result{
+    width: 100%;
+    height: 100vh;
+    flex-shrink: 0;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-image: url('./images/headphones_hero_2.jpg');
+}
+.result .results{
+    width: 80%;
+    height: 650px;
+}
+
+.result .top{
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.result .top h1{
+    padding-top: 20px;
+    text-align: center;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--fcolor);
+}
+.result .top p{
+    padding-top: 20px;
+    width: 637px;
+    color: var(--fcolor);
+    text-align: center;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.result .bot{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.result .bots{
+   margin-top: 50px;
+    width: 80%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+.result .bots div{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 207px;
+}
+.result .bots h3{
+    text-align: center;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    color: var(--fcolor);
+}
+.result .bots span{
+    text-align: center;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--fcolor);
+}
+.result .bots img{
+    color: var(--btn);
+    
+}
+.result .bit h1{
+    text-align: center;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    color: var(--fcolor);
+    margin: 10px;
+}
+.result .bit span{
+    color: var(--fcolor);
+    margin: 5px;
+    font-size: 14px;
+}
+.result .per{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--fcolor);
+    position: relative;
+    bottom: 120px;
+}
+
+.result .container {
+	margin: 20px;
+  display:flex;
+  flex-wrap: wrap;
+	gap: 10px 20px;
+}
+
+.result .pentagon-1 {
+	position: relative;
+	width: 157.5px;
+	height: 150px;
+	background: #4169e1;
+	clip-path: polygon( 50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+}
+
+
+  /*////////////////// media screen for menu result/////////////// */
+  @media (max-width: 1240px){
+    .result .results{
+      width: 97%;
+    }
+    .result .bots img{
+        width: 80%;
+        height: auto;
+    }
+}
+@media (max-width: 1050px){
+    .result .bots img{
+        width: 80%;
+        height: auto;
+    }
+    .result .bots div{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1000px){
+    .result .bots{
+       width: 90%;
+       flex-wrap: nowrap;
+       
+   }
+}
+@media (max-width: 850px){
+    .result .bot{
+          width: 97%;
+          flex-wrap: wrap;
+          
+      }
+    }
+@media (max-width: 800px){
+.result .bots{
+      width: 97%;
+      flex-wrap: nowrap;
+      
+  }
+}
+@media (max-width: 700px){
+.result .bots{
+  width: 70%;
+  flex-wrap: wrap;  
+  
+}
+.result .bots div{
+width: 200px;
+}
+
+.result .top p{
+width: 100%;
+
+}
+.result .results{
+width: 97%;
+}
+.result .bots img{
+  width: 150px;
+  height: auto;
+}
+}
+@media (max-width: 650px){
+.result .bots{
+  width: 90%;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+}
+@media (max-width: 600px){
+.result .bots{
+  width: 97%;
+  flex-wrap: wrap;
+  
+}
+}
+@media (max-width: 550px){
+.result .bots{
+  margin-top: 30px;
+  width: 60%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.result{
+width: 100%;
+height: auto;
+}
+.result .results{
+height: 1200px;
+}}
